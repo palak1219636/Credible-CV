@@ -1,0 +1,147 @@
+/*navigation bar*/
+/* .navbar{
+    height:6rem;
+    background-image: linear-gradient(#0d0e0e,#060e53);
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo img{
+    width: 11rem;
+    height: 5rem;
+}
+.sign-btn button{
+    border:none;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.sign-btn button:hover{
+    background-color:rgb(197, 194, 194) ;
+} */
+.sign-btn button{
+    border: none;
+}
+.navbar{
+    /* background-image: linear-gradient(#0d0e0e,#060e53); */
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+   background-image: linear-gradient(rgb(36, 45, 57),rgb(23, 126, 145));
+    height:7rem;
+}
+.right button {
+    float: right;
+    position: absolute;
+    right: 115px;
+    top: 25.5px;
+  }
+.sign-btn button{
+    border:none;
+    padding:0.5rem 1.5rem;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.sign-btn button:hover{
+    background-color:rgb(197, 194, 194) ;
+} 
+/*main container*/
+.first-container{
+    /* flex:1; */
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    flex-basis:100;
+}
+.sec-container{
+    display:flex;
+    /* flex:1; */
+    justify-content:center;
+    align-items:center;
+    height: 39rem;
+    /* background-color:yellow; */
+    /* background-image: linear-gradient(rgba(87, 230, 235, 0.4),rgba(73, 75, 71, 0.4)); */
+    background-image:linear-gradient(rgba(235,197,197,0.4),rgba(144,180,195,0.4));
+    /* background-image: radial-gradient(rgba(157, 182, 179, 0.642),rgba(171, 191, 203, 0.559)); */
+}
+.imgTextContainer{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    /* background-color:#17192c; */
+    /* background-color: white; */
+    width:52rem;
+}
+.imgContainer{
+    background-color:#e2e2d8;
+    /* box-shadow:2px 2px 2px white; */
+}
+.imgContainer > img{
+    height: 430px;
+    width: auto;
+}
+.textContainer{
+    /* color: white; */
+    padding: 0.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.textContainer .createBtn{
+    border:none;
+    /* background-color: #0A0E2B; */
+   background-image: linear-gradient(rgb(36, 45, 57),rgb(23, 126, 145));
+
+    color: white; 
+    padding: 0.5rem 1.5rem;
+    font-size: 1.3rem;
+}
+
+.textContainer .createBtn:hover{
+    /* background-color: white; */
+    border: .5px solid rgb(36, 45, 57) ; 
+    background-image: none;
+    /* border:2px solid #0A0E2B; */
+    /* color:#0A0E2B; */
+    color: rgb(36, 45, 57);
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+.imgContainer{
+    background: none;
+}
+.imgContainer img{
+     width:20.5rem;
+     box-shadow: 2px 2px 2px black;
+     /* transform:rotate(-8deg); */
+}
+
+@media screen and (max-width:724px){
+    .imgContainer img{
+        width: 18rem;
+        height: 25rem;
+    }
+}
+@media screen and (max-width:710px) ,screen and (max-height:530px){
+    .imgContainer img{
+        width: 9rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-height:446px){
+    .imgContainer img{
+        width: 8rem;
+        height: 18rem;
+    }
+}
+@media screen and (max-width:320px){
+    .navbar .logo img{
+        width: 3rem;
+        height: 6rem;
+    }
+}
